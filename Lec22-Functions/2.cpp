@@ -14,4 +14,4 @@ int main()
     cout << a << endl;
     printnum(a);
     return 0;
-}
+}  
