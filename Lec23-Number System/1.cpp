@@ -20,3 +20,7 @@ int main()
     cout << "Binary number is " << binary(k) << endl;
     return 0;
 }
+
+//In this code we didn't use binary =binary*10 +ans which is used in Lec39
+//Because if last bit of binary will be zero then Lec39 code will ignore it
+//so in decimal to binary conversion we have to use this code only 
