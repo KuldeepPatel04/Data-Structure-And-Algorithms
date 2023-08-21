@@ -1,25 +1,26 @@
 #include<iostream>
 using namespace std;
-void findnum(int arr[3][3],int i)
+void findnum(int arr[][3],int i)
 {
-    int start=0,end=8,row=2,col=3;
+    int start=0,end=8,row=2,colm=3,col=2;
     int mid=start+(end-start)/2;
     while(start<=end)
     {
         mid=start+(end-start)/2;
-        row=mid/col;
-        col=mid%col;
+        row=mid/colm;
+        col=mid%colm;
         if(arr[row][col]<i)
         {
             start=mid+1;
         }
         else if(arr[row][col]>i)
         {
-            end=mid-1;
+            end=mid;
         }
         else 
         {
             cout << row << endl << col;
+            break;
         }
     }
 }
